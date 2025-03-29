@@ -1,0 +1,27 @@
+   INTERFACES DEL DOM 
+   ● Window 
+        ○ Representar una ventana que contiene un DOM 
+    ● Document 
+        ○ Representa el propio DOM 
+    ● Event 
+         ○ Representa un evento que tiene lugar en el DOM 
+    ● Element     
+        ○ Representa un nodo del DOM
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/API#interfaces
+
+Contenido de la lección
+Eventos del DOM
+Los eventos del DOM son acciones que se producen en los nodos de una página web como resultado de las acciones realizadas por los usuarios. Existen muchos tipos de eventos, y en este resumen se presentan cuatro eventos diferentes de cuatro interfaces distintas.
+
+El evento “click” es un ejemplo de evento de la interfaz “Element”. Este evento se produce cuando se hace clic en un elemento y se pueden obtener propiedades, como la posición del puntero o si se han presionado teclas mientras se hace clic. Para capturar este evento, se debe obtener el elemento deseado y, a continuación, instanciar el método “addEventListener”.
+
+El evento “contextmenu” es otro evento de ratón que se dispara al hacer clic con el botón secundario del ratón. Al igual que el evento “click”, también necesita que la acción se base en pulsar y soltar el botón. Para capturar este evento, se debe hacer clic con el botón secundario del ratón en el elemento deseado.
+
+El evento “beforeunload” de la interfaz “Window” se dispara cuando el usuario intenta cerrar la ventana o pestaña del navegador que contiene la página web. Con este evento, se puede detectar cuando se intenta cerrar la web y actuar en consecuencia. Este evento puede ser útil en una página web que funciona sin conexión a internet.
+
+El evento “copy” de la interfaz “Window” se dispara cuando el usuario realiza una acción de copiar en el portapapeles previamente habiendo seleccionado contenido. Con este evento, se puede controlar lo que el usuario intenta copiar, como texto o imágenes, en la página web y evitar su copia.
+
+Para capturar eventos, se debe asociar un listener al elemento o interfaz deseado, y los eventos cuando se disparan poseen propiedades y métodos de la propia interfaz Event. También, es posible invocar al método preventDefault de un evento para evitar que el comportamiento por defecto que el evento tiene asociado sea realizado.
